@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Competition | GDD</title>
+	<link rel="icon" href="photos/gdd_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/008ada54cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/photos/yellow background.png");
+      min-height: 30%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+ <!--
+   <div class="w3-top"> 
+  -->
+     <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="photos/gdd_logo.png" alt="Buildings" width="40" height="27">
+    Game Development Days
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="registration.html" class="w3-bar-item w3-button"><i class="fa fa-id-badge"></i> REGISTRATION </a>
+      <a href="competition.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i><font color="darkgray"> COMPETITION </font></a>
+      <a href="workshops.html" class="w3-bar-item w3-button" ><i class="fa fa-th"></i> WORKSHOPS </a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> OUR TEAM</a>
+    </div>
+            <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+          <a href="#competition" onclick="toggleMobileNavigation()">COMPETITION</a>
+          <a href="#consulting" onclick="toggleMobileNavigation()">CONSULTING</a>
+        </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+  <a href="registration.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTRATION</a>
+  <a href="competition.html" onclick="w3_close()" class="w3-bar-item w3-button"> COMPETITION </a>
+  <a href="workshops.html" onclick="w3_close()" class="w3-bar-item w3-button">WORKSHOPS</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM </a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+	<div class="w3-container w3-center" style="padding:128px 16px " id="sponsor" >
+	<img src="photos/game-app_trans_Colour_x16.png" style="width:10%">
+	<!-- https://www.quytech.com/game-development-company.php -->
+	<h1> <strong> Competition </strong></h1>
+		
+<div class="w3-container" id="team">
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photos/space.png" style="width:100%">
+        <div class="w3-container">
+          <h3>Theme</h3>
+          <p>This year's theme will be <strong>space</strong>, as we choose different themes each year. Accordingly, we expect space-related games from competitors.</p>
+          <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photos/People.png" style="width:80%">
+		  <!-- https://volunteers.robotevents.com/ -->
+        <div class="w3-container">
+          <h3>Who can participate</h3>
+          <p>All middle and highschool students can participate in the competition. </p>
+          <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photos/6_moral_value_map_FILL-12.png" style="width:80%">
+		  <!-- https://www.ethicsfordesigners.com/moral-value-map -->
+        <div class="w3-container">
+          <h3>Rules</h3>
+          <p>Competitor teams develop and present games in accordance with the shared score criteria and them. Competitior teams must develop their games using Blender and Unreal Engine.Teams will be ranked according to the points they have earned.</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="photos/calender.png" alt="Dan" style="width:70%">
+        <div class="w3-container">
+          <h3>Date & Time</h3>
+          <p>Game Development Days is planed to start on February 20, 2022.The presentations  will be held on February 27 and award ceremony will be on the afternoon of the same day.</p>
+          <p>&nbsp;</p>
+<p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center"><strong>PHOTOS FROM LAST YEAR</strong></h3>
+<div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="photos/photo1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="photos/photo2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="photos/photo3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="photos/photo4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#myNavbar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+      <a href="https://www.fmv.edu.tr/tr-TR/ayazaga-isik-lisesi-fen-lisesi/182" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/ISIK.png" width="50" height="50"></a>
+      
+      <a href="https://www.fmv.edu.tr/" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/vakif.png" width="55" height="53">
+      </a>
+
+  </div>
+ <p class="w3-xsmall">This website was made for academic purposes. </p>
+ <p class="w3-small">Copyright © 2023</p>
+ </footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

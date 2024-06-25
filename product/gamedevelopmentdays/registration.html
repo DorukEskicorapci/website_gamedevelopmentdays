@@ -1,0 +1,155 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Register | GDD</title>
+	<link rel="icon" href="photos/gdd_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/008ada54cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+	
+			#socialmedia div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+		}
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="photos/gdd_logo.png" alt="Buildings" width="40" height="27">
+    Game Development Days
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="registration.html" class="w3-bar-item w3-button"><i class="fa fa-id-badge"></i><font color="darkgray"> REGISTRATION </font></a>
+      <a href="competition.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> COMPETITION </a>
+      <a href="workshops.html" class="w3-bar-item w3-button" ><i class="fa fa-th"></i> WORKSHOPS </a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> OUR TEAM</a>
+    </div>
+            <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+          <a href="#competition" onclick="toggleMobileNavigation()">COMPETITION</a>
+          <a href="#consulting" onclick="toggleMobileNavigation()">CONSULTING</a>
+        </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Close x</a>
+  <a href="registration.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTRATION</a>
+  <a href="competition.html" onclick="w3_close()" class="w3-bar-item w3-button"> COMPETITION </a>
+  <a href="workshops.html" onclick="w3_close()" class="w3-bar-item w3-button"> WORKSHOPS</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button"> OUR TEAM </a>
+</nav>
+	
+	
+	<h2 class="w3-center">Join our game development journey by filling the form below and fun with us while learning. </h3>
+	
+	    <form action="action_pages.php" method= "post" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Takım Adı" name="team_name" required><br>
+        <input class="w3-input w3-border" type="text" placeholder="Danışman Adı ve Soyadı" name="coach" required><br>
+        <input class="w3-input w3-border" type="text" placeholder="Danışman E-posta adresi" name="mail" id= "mail" required><br>
+      </p>
+			<p><input class="w3-input w3-border" type="text" placeholder="Danışman Telefon Numarası (0XXX-XXX-XX-XX veya XXX-XXX-XX-XX)" name="telefon" required maxlength="11" required minlength="10"></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="Öğrenci Adı ve Soyadı" name="ogrenci_bir" required></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="Öğrenci Mail Adresi" name="ogr_mail" required></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="2. öğrenci Adı ve Soyadı" name="ogrenci_iki" required ></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="2.öğrenci Mail Adresi" name="ogr_mail2" required></p><br>
+			<p><input class="w3-input w3-border" type="text" placeholder="3.öğrenci Adı ve Soyadı" name="ogrenci_uc" required></p><br>
+      <p><input class="w3-input w3-border" type="text" placeholder="3. öğrenci Mail Adresi" name="ogr_mail3" required></p><br>
+      
+      
+			<p><br>
+        <button class="w3-button w3-black" type="submit" style="margin-bottom:27px">
+          <i class="fa fa-paper-plane"></i> SEND!
+        </button>
+      </p>
+<script>
+$("#btn").click(function()
+{
+var email = $("input#mail").val();
+if(MailKontrol(email))
+{
+alert("Email Adresi Geçerli");
+}
+else
+{
+alert("Geçersiz veya Hatalı Email");
+return false;
+}
+})
+function MailKontrol(email)
+{
+var kontrol = new RegExp(/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/i);
+return kontrol.test(email);
+}</script>
+</form>
+	
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#myNavbar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+      <a href="https://www.fmv.edu.tr/tr-TR/ayazaga-isik-lisesi-fen-lisesi/182" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/ISIK.png" width="50" height="50"></a>
+      
+      <a href="https://www.fmv.edu.tr/" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/vakif.png" width="55" height="53">
+      </a>
+
+  </div>
+ <p class="w3-xsmall">This website was made for academic purposes. </p>
+ <p class="w3-small">Copyright © 2023</p>
+ </footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

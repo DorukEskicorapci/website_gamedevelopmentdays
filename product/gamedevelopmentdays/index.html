@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage | GDD</title>
+	<link rel="icon" href="photos/gdd_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/008ada54cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.cs
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("photos/background jungle.png");
+      min-height: 92%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+ <!--
+   <div class="w3-top"> 
+  -->
+     <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="photos/gdd_logo.png" alt="Buildings" width="40" height="27">
+    Game Development Days
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="registration.html" class="w3-bar-item w3-button"><i class="fa fa-id-badge"></i> REGISTRATION </a>
+      <a href="competition.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> COMPETITION </a>
+      <a href="workshops.html" class="w3-bar-item w3-button" ><i class="fa fa-th"></i> WORKSHOPS </a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> OUR TEAM </a>
+    </div>
+            <div id="mobile-sidenav" class="mobile-links w3-sand">
+          <a href="javascript:void(0)" class="closebtn w3-round" onclick="toggleMobileNavigation()">&times;</a>
+          <a href="#competition" onclick="toggleMobileNavigation()">COMPETITION</a>
+          <a href="#consulting" onclick="toggleMobileNavigation()">CONSULTING</a>
+        </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+  <a href="registration.html" onclick="w3_close()" class="w3-bar-item w3-button">REGISTRATION</a>
+  <a href="competition.html" onclick="w3_close()" class="w3-bar-item w3-button"> COMPETITION </a>
+  <a href="workshops.html" onclick="w3_close()" class="w3-bar-item w3-button">WORKSHOPS</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+</nav>
+
+<!-- Header with image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:50px">
+    <span class="w3-jumbo w3-hide-small"><b><strong>Game Development Days</strong></b></span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>Game Development Days</b></span><br>
+    <span class="w3-xlarge">Have fun, learn, and share. </span>
+    <p><a href="registration.html" class="w3-button w3-white w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join the game</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <a href="https://www.instagram.com/gdd.turkey/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/gddturkey" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+	<a href="https://www.youtube.com/channel/UCJaBO9lk253FCPgMHREXzTw" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a href="###" target="_blank"><img class="w3-image w3-round-large" src="photos/Discord-Logo-White.png" width="20" height="44"></a>
+  </div>
+</header>
+	
+
+	
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about" class="w3-center">
+  <h3 class="w3-center">ABOUT THE TEAM</h3>
+  <p class="w3-center w3-large">A team where only students make decisions</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px" class="w3-center">
+	<div class="w3-third">
+      <i class="fa fa-handshake-angle w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"><strong>Trustworthiness</strong></p>
+      <p>Organizing without any discrimination among the&nbsp; competitors and the privacy of your personal data is our top priority.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-hand-holding-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"><strong>Friendly</strong></p>
+      <p>With our team, we do our best to answer all your questions respectfully and in a friendly manner.</p>
+    </div>
+<div class="w3-third">
+      <i class="fa fa-people-carry-box w3-margin-bottom w3-jumbo" ></i>
+      <p class="w3-large"><strong>Enthusiastic</strong></p>
+      <p>We work hard as a team to welcome you with the best opportunities while learning and during the competition.</p>
+    </div>
+  </div>
+	<div class="w3-row-padding w3-center" style="margin-top:54px" class="w3-center"></div>
+	<p class="w3-center" ><a href="team.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Meet the team</a></p>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-center">
+      <h3>Theme Game Competition</h3>
+      <p style="margin-bottom:20px" >We aim to support our competitors to continue their projects while they have the chance to prove themselves by presenting their games to our  jury committee.</p>
+      <p style="margin-top:20px" style="margin-bottom:20px" style="margin-bottom:20px"><a href="competition.html" class="w3-button w3-black"><i class="fa fa-gamepad"> </i> Details </a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="photos/Game Photo 1.png" alt="Buildings" width="1800" height="1200" style="margin-top:20px">
+    </div>
+  </div>
+</div>
+	
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="photos/Blender in app ss.png" alt="Buildings" width="1918" height="1080">
+    </div>
+	<div class="w3-col m6 w3-center">
+      <h3>Student Workshops</h3>
+      <p>Unreal Engine and Blender workshops are conducted by the students from our school to assist our competitors and game developers in the development process of their games.</p>
+      <p style="margin-top:20px" style="margin-bottom:20px" ><a href="workshops.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Details</a ></p>
+    </div>
+  </div>
+</div>
+	
+	<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-center">
+      <h3>Expert Workshops</h3>
+      <p >We bring together the&nbsp; important names of the industry with them so that they can be guides and role models for students in their game development adventures.</p>
+      <p style="margin-top:20px" ><a href="workshops.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Details</a></p>
+    </div>
+    <div class="w3-col m6">
+     <img class="w3-image w3-round-large" src="photos/webinar.jpg" alt="Buildings" width="732" height="415" style="margin-top:20px"></div>
+  </div>
+</div>
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="sponsor">
+	<h2 class="w3-center">Sponsors </h3>
+  <div class="w3-row-padding" style="margin-top:30px">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://mobidictum.biz/tr/" target="_blank"><img src="photos/Mobidictum Business Logo White 01.png" alt="Mobidictum" style="width:100%"></a>
+<div class="w3-container">
+          <h5><strong>Media Sponsor</strong></h5>
+          <p>MOBIDICTUM has enabled us to reach large masses by announcing GDD.</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="http://www.webtekno.com" target="_blank"><img src="photos/webtekno-logo.png" alt="webtekno" style="width:100%"></a>
+<div class="w3-container">
+          <h5><strong>Media Sponsor</strong></h5>
+          <p>WEBTEKNO has enabled us to reach large masses by announcing GDD.</p>
+          <p>&nbsp;</p>
+</div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <a href="https://hwp.com.tr/" target="_blank"><img src="photos/HWP logo.jpg" alt="HWP" style="width:100%"></a>
+<div class="w3-container">
+          <h5><strong>Media Sponsor</strong></h5>
+          <p>HardwarePlus has enabled us to reach large masses by announcing GDD.</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+	<p>Statistics of Game Development Days 2022</p>
+	<p>&nbsp;</p>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3+</span>
+    <br>
+    Partners
+  </div>
+  <div class="w3-quarter">
+    <p> <span class="w3-xxlarge">40+</span> <br>
+    </p>
+    <p>News Website Published</p>
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">34</span>
+    <br>
+  Competitior Teams</div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">30.000+</span>
+    <br>
+  Interactions</div>
+</div>
+	
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#myNavbar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+      <a href="https://www.fmv.edu.tr/tr-TR/ayazaga-isik-lisesi-fen-lisesi/182" target="_blank">
+    <a href="https://www.fmv.edu.tr/tr-TR/ayazaga-isik-lisesi-fen-lisesi/182" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/ISIK.png" width="50" height="50"></a>
+      
+      <a href="https://www.fmv.edu.tr/" target="_blank">
+    <img class="w3-image w3-round-large" src="photos/vakif.png" width="55" height="53">
+      </a>
+
+  </div>
+ <p class="w3-xsmall">This website was made for academic purposes. </p>
+ <p class="w3-small">Copyright © 2023 </p>
+ </footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
